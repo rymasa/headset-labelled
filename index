@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headset Mockup</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .headset-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+        .headset {
+            width: 100%;
+        }
+        .label {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .label::after {
+            content: '';
+            position: absolute;
+            border: 5px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.7);
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .headband { top: 20px; left: 50%; transform: translateX(-50%); }
+        .ear-cup-left { top: 150px; left: 40px; }
+        .ear-cup-right { top: 150px; right: 40px; }
+        .microphone { top: 250px; left: 60px; }
+        .cushioning { top: 70px; left: 50%; transform: translateX(-50%); }
+    </style>
+</head>
+<body>
+    <div class="headset-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Headphones.png" alt="Headset" class="headset">
+        <div class="label headband">Headband</div>
+        <div class="label ear-cup-left">Left Ear Cup</div>
+        <div class="label ear-cup-right">Right Ear Cup</div>
+        <div class="label microphone">Microphone</div>
+        <div class="label cushioning">Cushioning</div>
+    </div>
+</body>
+</html>
